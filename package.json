@@ -1,0 +1,61 @@
+{
+  "name": "vscode-wolfram-pdf",
+  "displayName": "vscode-wolfram-pdf",
+  "description": "Convert a wolfram script to pdf.",
+  "version": "0.0.1",
+  "repository": {
+    "url": "https://github.com/TurbulenceChaos/vscode-wolfram-pdf"
+  },
+  "activationEvents": [
+    "onLanguage:wolfram",
+    "onStartupFinished"
+  ],
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Keymaps"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "wolfram.Player",
+        "title": "Play it"
+      }
+    ],
+    "configuration": {
+      "title": "vscode-wolfram-pdf",
+      "properties": {
+        "wolframPlayer.path": {
+          "type": "string",
+          "default": "",
+          "description": "Path to the Wolfram Player executable"
+        }
+      }
+    },
+    "menus": {
+      "editor/title/run": [
+        {
+          "when": "resourceLangId == wolfram",
+          "command": "wolfram.Player",
+          "alt": "wolfram.Player",
+          "group": "Foo"
+        }
+      ]
+    },
+    "languages": [
+      {
+        "id": "wolfram",
+        "aliases": [
+          "Wolfram Language"
+        ],
+        "extensions": [
+          ".wl",
+          ".wls"
+        ]
+      }
+    ]
+  }
+}

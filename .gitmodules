@@ -1,0 +1,3 @@
+[submodule "Wolfram-pdf"]
+	path = Wolfram-pdf
+	url = https://github.com/TurbulenceChaos/Wolfram-pdf.git
