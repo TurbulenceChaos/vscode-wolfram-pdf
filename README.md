@@ -2,7 +2,7 @@
 ## Introduction
 Convert wolfram script to pdf and cdf file, then show interactive result in wolfram player.
 
-![vscode wolfram player test](Images/vscode-wolfram-player-test.png)
+![wolfram player test](Images/wolfram-player-test.png)
 
 ## Install and configuration
 
@@ -14,7 +14,7 @@ Convert wolfram script to pdf and cdf file, then show interactive result in wolf
    
     ```json
     {
-        "wolframPlayer.path": "/usr/local/Wolfram/WolframEngine/14.1/Executables/wolframplayer"
+        "wolfram.player.path": "/usr/local/Wolfram/WolframEngine/14.1/Executables/wolframplayer"
     }
     ```
 

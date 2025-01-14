@@ -22,14 +22,15 @@
   "contributes": {
     "commands": [
       {
-        "command": "wolfram.Player",
-        "title": "Play it"
+        "command": "wolfram.player",
+        "title": "Play it",
+        "icon": "$(debug-start)"
       }
     ],
     "configuration": {
       "title": "vscode-wolfram-pdf",
       "properties": {
-        "wolframPlayer.path": {
+        "wolfram.player.path": {
           "type": "string",
           "default": "",
           "description": "Path to the Wolfram Player executable"
@@ -40,8 +41,8 @@
       "editor/title/run": [
         {
           "when": "resourceLangId == wolfram",
-          "command": "wolfram.Player",
-          "alt": "wolfram.Player",
+          "command": "wolfram.player",
+          "alt": "wolfram.player",
           "group": "Foo"
         }
       ]

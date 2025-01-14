@@ -11,7 +11,7 @@ const { spawn } = require("child_process");
  */
 function activate(context) {
   context.subscriptions.push(
-    vscode.commands.registerCommand("wolfram.Player", () => {
+    vscode.commands.registerCommand("wolfram.player", () => {
       const { activeTextEditor } = vscode.window;
       if (
         !(
@@ -42,7 +42,7 @@ function activate(context) {
         if (code === 0) {
           const cdfFilePath = filePath.replace(/\.[^/.]+$/, ".cdf");
           const playerPath = vscode.workspace
-            .getConfiguration("wolframPlayer")
+            .getConfiguration("wolfram.player")
             .get("path");
           if (playerPath) {
             const cdfDir = path.dirname(cdfFilePath);
