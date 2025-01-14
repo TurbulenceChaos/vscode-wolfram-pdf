@@ -11,7 +11,8 @@ Convert wolfram script to pdf and cdf file, then show interactive result in wolf
 2. Make sure you have `wolframscript` and `wolframplayer` in your `PATH`.
 
 3. Configure wolfram player path in your Settings.json.
-    ```JSON
+   
+    ```json
     {
         "wolframPlayer.path": "/usr/local/Wolfram/WolframEngine/14.1/Executables/wolframplayer"
     }
@@ -22,15 +23,15 @@ Convert wolfram script to pdf and cdf file, then show interactive result in wolf
 Open your wolfram script file and click the <kbd>Play it</kbd> button. 
 
 ## Development and build
+1. Debug with vscode extension development (<kbd>F5</kbd>).
 
-Debug with vscode extension development (<kbd>F5</kbd>).
+2. Use `vsce` to build the package.
 
-Use `vsce` to build the package.
-```sh
-vsce package
-```
+    ```shell
+    vsce package
+    ```
 
-No `node_modules`
+3. No `node_modules`
 
 ## Reference
 
