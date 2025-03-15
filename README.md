@@ -7,10 +7,16 @@ Convert wolfram script to pdf and cdf file, then show interactive result in wolf
 ## Install and configuration
 
 1. Install from the vsix file.
+   ```bash
+   git clone https://github.com/TurbulenceChaos/vscode-wolfram-pdf.git
+   
+   cd vscode-wolfram-pdf
+   
+   git submodule update --init --recursive
+   ```
+3. Make sure you have `wolframscript` and `wolframplayer` in your `PATH`.
 
-2. Make sure you have `wolframscript` and `wolframplayer` in your `PATH`.
-
-3. Configure wolfram player path in your Settings.json.
+4. Configure wolfram player path in your Settings.json.
    
     ```json
     {
